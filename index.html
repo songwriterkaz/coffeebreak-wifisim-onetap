@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Coffeebreak WifiSIM One-Tap</title>
+<meta name="theme-color" content="#000"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.png"><link rel="apple-touch-icon" href="icon.png"><link rel="stylesheet" href="common.css"></head><body>
+<header><img src="logo.png" alt="Coffeebreak logo"><h1>WifiSIM One-Tap</h1></header>
+<main id="start">
+<p class="note">Calls over WiFi between Coffeebreak app users. This is not a mobile carrier SIM and does not give you a real phone number.</p>
+<button id="go" class="big green" style="font-size:3rem;padding:70px 12px;margin-top:16px" aria-label="Tap to start. Sets everything up automatically.">Tap to start</button>
+</main>
+<main id="busy" class="hide" aria-live="assertive"><p class="num" style="color:#ffd84d" id="step">Setting up…</p><ol id="steps" class="note" style="text-align:left;font-size:1.4rem"></ol></main>
+<main id="done" class="hide" aria-live="polite">
+<p class="num" id="okt">You're connected</p>
+<p class="note">Your Coffeebreak call ID</p><p class="num" id="me" aria-label=""></p>
+<p class="note" id="st">Online</p>
+<button id="share" class="big blue" aria-label="Share my call ID with family or friends">Share my call ID</button>
+<div id="qr" aria-hidden="true"></div>
+<p class="note">Saved on this device. Next time it connects by itself.</p>
+<a class="big grey" style="text-align:center;text-decoration:none" href="https://songwriterkaz.github.io/coffeebreak-onetap-phone/" aria-label="Open the One-Tap Phone to make calls">Open One-Tap Phone</a>
+</main>
+<p id="err" class="note" role="alert" style="color:#ff8080"></p>
+<footer>© Karen O'Brien (Coffeebreak). All designs, music, art and content remain the property of Karen O'Brien. Your purchase gives you a personal-use licence only. It doesn't transfer ownership or allow resale, copying or redistribution.</footer>
+<script src="qrcode.min.js"></script><script src="peerjs.min.js"></script><script src="core.js"></script><script src="sim.js"></script></body></html>
