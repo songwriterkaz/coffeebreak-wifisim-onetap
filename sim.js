@@ -1,6 +1,6 @@
 const me=myNum();put('setup',1);$('#me').textContent=me;$('#me').setAttribute('aria-label','Your call ID is '+me.split('').join(' '));
 const PH='https://songwriterkaz.github.io/coffeebreak-onetap-phone/?add='+me;
-try{new QRCode($('#qr'),{text:PH,width:130,height:130})}catch(e){}
+try{new QRCode($('#qr'),{text:PH,width:280,height:280,colorDark:'#000000',colorLight:'#ffffff'})}catch(e){}
 let said=false;onState=s=>{paintState(s);if(s.online&&!said){said=true;buzz([80,60,80])}};
 onCall=c=>{try{c.close()}catch(e){}};
 state();
